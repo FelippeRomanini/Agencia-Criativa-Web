@@ -12,43 +12,78 @@
 
 <body>
 
-    <!-- ========================================
-         HEADER
-    ========================================= -->
+    <!-- Header -->
 
     <header class="header">
 
-        <a href="#home" class="logo-link">
+        <div>
             <img
                 src="images/logo.png"
                 alt="Agência Criativa Web"
                 id="logo"
             >
-        </a>
+        </div>
 
-        <nav class="navbar" aria-label="Navegação principal">
+        <!-- Botão hamburger -->
+
+        <button
+            id="menu-toggle"
+            aria-label="Abrir menu"
+        >
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <nav
+            id="navbar"
+            class="navbar"
+        >
 
             <ul class="nav-list">
 
-                <li class="nav-item">
-                    <a href="#home" class="nav-link">Home</a>
+                <li>
+                    <a
+                        href="#home"
+                        class="nav-link"
+                    >
+                        Home
+                    </a>
                 </li>
 
-                <li class="nav-item">
-                    <a href="#sobre" class="nav-link">Sobre</a>
+                <li>
+                    <a
+                        href="#sobre"
+                        class="nav-link"
+                    >
+                        Sobre
+                    </a>
                 </li>
 
-                <li class="nav-item">
-                    <a href="#servicos" class="nav-link">Serviços</a>
+                <li>
+                    <a
+                        href="#servicos"
+                        class="nav-link"
+                    >
+                        Serviços
+                    </a>
                 </li>
 
-                <li class="nav-item">
-                    <a href="#contato" class="nav-link">Contato</a>
+                <li>
+                    <a
+                        href="#contato"
+                        class="nav-link"
+                    >
+                        Contato
+                    </a>
                 </li>
 
             </ul>
 
-            <a href="#contato" class="btn-contact">
+            <a
+                href="#contato"
+                class="btn-contact"
+            >
                 Fale conosco
             </a>
 
@@ -57,17 +92,16 @@
     </header>
 
 
-    <!-- ========================================
-         CONTEÚDO PRINCIPAL
-    ========================================= -->
+    <!-- Conteúdo principal -->
 
     <main>
 
-        <!-- ========================================
-             HOME / HERO
-        ========================================= -->
+        <!-- Home -->
 
-        <section id="home" class="hero">
+        <section
+            id="home"
+            class="hero"
+        >
 
             <div class="hero-content">
 
@@ -89,11 +123,17 @@
 
                 <div class="hero-buttons">
 
-                    <a href="#servicos" class="btn btn-primary">
+                    <a
+                        href="#servicos"
+                        class="btn btn-primary"
+                    >
                         Conheça nossos serviços
                     </a>
 
-                    <a href="#contato" class="btn btn-outline">
+                    <a
+                        href="#contato"
+                        class="btn btn-outline"
+                    >
                         Fale com um especialista
                     </a>
 
@@ -104,11 +144,12 @@
         </section>
 
 
-        <!-- ========================================
-             SOBRE
-        ========================================= -->
+        <!-- Sobre -->
 
-        <section id="sobre" class="about">
+        <section
+            id="sobre"
+            class="about"
+        >
 
             <div class="about-container">
 
@@ -164,11 +205,12 @@
         </section>
 
 
-        <!-- ========================================
-             SERVIÇOS
-        ========================================= -->
+        <!-- Serviços -->
 
-        <section id="servicos" class="services">
+        <section
+            id="servicos"
+            class="services"
+        >
 
             <div class="services-header">
 
@@ -201,7 +243,10 @@
                         experiência aos seus visitantes.
                     </p>
 
-                    <a href="#" class="service-link">
+                    <a
+                        href="#"
+                        class="service-link"
+                    >
                         Saiba mais →
                     </a>
 
@@ -218,7 +263,10 @@
                         sua presença no mercado.
                     </p>
 
-                    <a href="#" class="service-link">
+                    <a
+                        href="#"
+                        class="service-link"
+                    >
                         Saiba mais →
                     </a>
 
@@ -235,7 +283,10 @@
                         melhores resultados.
                     </p>
 
-                    <a href="#" class="service-link">
+                    <a
+                        href="#"
+                        class="service-link"
+                    >
                         Saiba mais →
                     </a>
 
@@ -252,7 +303,10 @@
                         necessidades dos usuários.
                     </p>
 
-                    <a href="#" class="service-link">
+                    <a
+                        href="#"
+                        class="service-link"
+                    >
                         Saiba mais →
                     </a>
 
@@ -263,11 +317,12 @@
         </section>
 
 
-        <!-- ========================================
-             CONTATO
-        ========================================= -->
+        <!-- Contato -->
 
-        <section id="contato" class="contact">
+        <section
+            id="contato"
+            class="contact"
+        >
 
             <div class="contact-content">
 
@@ -354,28 +409,34 @@
     </main>
 
 
-    <!-- ========================================
-         FOOTER
-    ========================================= -->
+    <!-- Footer -->
 
     <footer class="footer">
 
         <ul class="footer-nav">
 
             <li>
-                <a href="#home">Home</a>
+                <a href="#home">
+                    Home
+                </a>
             </li>
 
             <li>
-                <a href="#sobre">Sobre</a>
+                <a href="#sobre">
+                    Sobre
+                </a>
             </li>
 
             <li>
-                <a href="#servicos">Serviços</a>
+                <a href="#servicos">
+                    Serviços
+                </a>
             </li>
 
             <li>
-                <a href="#contato">Contato</a>
+                <a href="#contato">
+                    Contato
+                </a>
             </li>
 
         </ul>
@@ -385,6 +446,9 @@
         </p>
 
     </footer>
+
+
+    <script src="script.js"></script>
 
 </body>
 
