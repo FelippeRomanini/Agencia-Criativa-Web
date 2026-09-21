@@ -1,0 +1,72 @@
+@use "../abstracts/variables.scss" as vars;
+
+.contact {
+    padding: vars.$spacing-section vars.$container-padding;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 5rem;
+
+    background-color: vars.$color-background;
+
+
+    &__content {
+        max-width: 35rem;
+    }
+
+
+    &__form {
+        display: flex;
+        flex-direction: column;
+
+        gap: vars.$spacing-medium;
+    }
+
+
+    &__form-group {
+        display: flex;
+        flex-direction: column;
+
+        gap: 0.5rem;
+    }
+
+
+    &__form-label {
+        color: vars.$color-white;
+
+        font-size: vars.$font-size-normal;
+    }
+
+
+    &__form-input {
+        width: 100%;
+
+        padding: vars.$spacing-unit;
+
+        border: 1px solid rgba(255, 255, 255, 0.1);
+
+        border-radius: vars.$radius-small;
+
+        outline: none;
+
+        background-color: vars.$color-background-secondary;
+
+        color: vars.$color-white;
+
+        transition: border-color vars.$transition-normal;
+
+
+        &:focus {
+            border-color: vars.$color-purple;
+        }
+
+
+        &--textarea {
+            min-height: 10rem;
+
+            resize: vertical;
+        }
+    }
+}

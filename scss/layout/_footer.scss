@@ -1,0 +1,43 @@
+@use "../abstracts/variables" as vars;
+
+.footer {
+    padding: 3rem vars.$container-padding;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+
+    background-color: vars.$color-background-secondary;
+
+
+    &__nav {
+        display: flex;
+
+        gap: vars.$spacing-medium;
+    }
+
+
+    &__nav-item {
+        display: flex;
+    }
+
+
+    &__nav-link {
+        color: vars.$color-text;
+
+        transition: color vars.$transition-fast;
+
+
+        &:hover {
+            color: vars.$color-purple-light;
+        }
+    }
+
+
+    &__copyright {
+        color: vars.$color-text;
+
+        font-size: vars.$font-size-small;
+    }
+}

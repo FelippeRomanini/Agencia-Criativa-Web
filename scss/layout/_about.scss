@@ -1,0 +1,64 @@
+@use "../abstracts/variables" as vars;
+
+.about {
+    padding: vars.$spacing-section vars.$container-padding;
+
+    background-color: vars.$color-background;
+
+
+    &__container {
+        display: grid;
+
+        grid-template-columns: 1fr 1fr;
+
+        gap: 5rem;
+
+        align-items: center;
+    }
+
+
+    &__image img {
+        width: 100%;
+
+        display: block;
+
+        border-radius: 1rem;
+    }
+
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    &__stats {
+        margin-top: 3rem;
+
+        display: flex;
+
+        gap: vars.$spacing-large;
+    }
+
+
+    &__stat {
+        display: flex;
+        flex-direction: column;
+
+        gap: 0.4rem;
+    }
+
+
+    &__stat-number {
+        color: vars.$color-purple-light;
+
+        font-size: 2rem;
+    }
+
+
+    &__stat-label {
+        color: vars.$color-text;
+
+        font-size: vars.$font-size-small;
+    }
+}

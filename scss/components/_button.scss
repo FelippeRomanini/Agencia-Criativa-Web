@@ -1,0 +1,121 @@
+@use "../abstracts/variables" as vars;
+@use "../abstracts/mixins" as mixins;
+
+.button {
+    height: 3.2rem;
+    padding: 0 1.5rem;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: vars.$radius-button;
+
+    font-size: vars.$font-size-normal;
+    font-weight: 500;
+
+    cursor: pointer;
+
+     transition:
+        transform vars.$transition-normal,
+        box-shadow vars.$transition-normal,
+        background-color vars.$transition-normal,
+        color vars.$transition-normal,
+        border-color vars.$transition-normal;
+
+    // Primary
+
+    &--primary {
+        border: none;
+
+        background: linear-gradient(
+            90deg,
+            vars.$color-purple,
+            vars.$color-purple-light
+        );
+
+        color:vars.$color-white;
+
+        &:hover {
+            @include mixins.hover-lift(-3px);
+
+            box-shadow: vars.$shadow-purple;
+        }
+    }
+
+    // Button outline
+
+    &--outline {
+        border: 1px solid vars.$color-white;
+
+        background-color: transparent;
+
+        color: vars.$color-white;
+
+         &:hover {
+            border-color: vars.$color-purple-light;
+
+            color: vars.$color-purple-light;
+
+            @include mixins.hover-lift(-3px);
+        }
+    }
+
+    // Contact
+
+    &--contact {
+        position: relative;
+
+        width: 10rem;
+        height: 2.8rem;
+
+        margin-left: 4rem;
+
+        border: none;
+        border-radius: vars.$radius-button;
+
+        background-color: vars.$color-purple;
+
+        color: vars.$color-white;
+
+        font-weight: 600;
+
+        isolation: isolate;
+
+
+        &::before {
+            content: "";
+
+            position: absolute;
+            inset: 0;
+            z-index: -1;
+
+            border-radius: inherit;
+
+            background-color: vars.$color-purple-light;
+
+            filter: blur(18px);
+
+            opacity: 0;
+
+            transition:
+                opacity vars.$transition-normal,
+                transform vars.$transition-normal;
+        }
+
+
+        &:hover {
+            background-color: vars.$color-purple-light;
+
+            @include mixins.hover-lift(-4px);
+
+            box-shadow: vars.$shadow-purple;
+        }
+
+
+        &:hover::before {
+            opacity: 0.6;
+            transform: scale(1.05);
+        }
+    }
+}

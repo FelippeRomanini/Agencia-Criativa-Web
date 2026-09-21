@@ -1,0 +1,24 @@
+@mixin flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin flex-between {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@mixin section-padding {
+    padding-left: $container-padding;
+    padding-right: $container-padding;
+}
+
+@mixin hover-lift($distance: -3px) {
+    transform: translateY($distance);
+}
+
+@mixin transition($properties...) {
+    transition: $properties;
+}

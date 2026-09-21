@@ -1,0 +1,44 @@
+// cores
+
+$color-background: #0B0B12;
+$color-background-secondary: #15151f;
+
+$color-purple: #7c3aed;
+$color-purple-light: #a855f7;
+$color-white: #ffffff;
+$color-text: #a1a1aa;
+
+//tipografia
+
+$font-size-small: 0.875rem;
+$font-size-normal: 1rem;
+$font-size-medium: 1.55rem;
+$font-size-large: 3.5rem;
+
+// transicoes
+
+$transition-fast: 0.2s ease;
+$transition-normal: 0.3s ease;
+
+// borda
+
+$radius-small: 0.5rem;
+$radius-button: 0.5rem;
+
+// sombra
+
+$shadow-purple: 0 10px 30px rgba(124, 58, 237, 0.35);
+
+// espacamento
+
+$spacing-unit: 1rem;
+
+$spacing-small: $spacing-unit;
+$spacing-medium: $spacing-unit * 2;
+$spacing-large: $spacing-unit * 4;
+$spacing-section: $spacing-unit * 8;
+
+
+// layout
+
+$container-padding: 28rem;

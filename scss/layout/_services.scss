@@ -1,0 +1,80 @@
+@use "../abstracts/variables" as vars;
+
+.services {
+    padding: vars.$spacing-section vars.$container-padding;
+
+    background-color: vars.$color-background-secondary;
+
+
+    &__header {
+        max-width: 50rem;
+
+        margin-bottom: vars.$spacing-large;
+    }
+
+
+    &__grid {
+        display: grid;
+
+        grid-template-columns: repeat(2, 1fr);
+
+        gap: 1.5rem;
+    }
+
+
+    &__card {
+        padding: vars.$spacing-medium;
+
+        border: 1px solid rgba(255, 255, 255, 0.08);
+
+        border-radius: 1rem;
+
+        background-color: vars.$color-background;
+
+        transition:
+            transform vars.$transition-normal,
+            border-color vars.$transition-normal,
+            box-shadow vars.$transition-normal;
+
+
+        &:hover {
+            transform: translateY(-6px);
+
+            border-color: vars.$color-purple;
+
+            box-shadow: 0 15px 40px rgba(124, 58, 237, 0.15);
+        }
+    }
+
+
+    &__card-title {
+        margin-bottom: vars.$spacing-unit;
+
+        color: vars.$color-white;
+
+        font-size: vars.$font-size-medium;
+    }
+
+
+    &__card-description {
+        margin-bottom: vars.$spacing-medium;
+
+        color: vars.$color-text;
+
+        line-height: 1.6;
+    }
+
+
+    &__card-link {
+        color: vars.$color-purple-light;
+
+        font-weight: 600;
+
+        transition: color vars.$transition-fast;
+
+
+        &:hover {
+            color: vars.$color-white;
+        }
+    }
+}

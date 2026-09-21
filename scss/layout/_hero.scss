@@ -1,0 +1,49 @@
+@use "../abstracts/variables" as vars;
+
+
+
+.hero {
+    min-height: 90vh;
+
+    padding: 0 vars.$container-padding;
+
+    display: flex;
+    align-items: center;
+
+    background-image: url("../images/home.png");
+    background-size: cover;
+    background-position: center;
+
+
+    &__content {
+        max-width: 50rem;
+    }
+
+
+    &__title {
+        margin-bottom: vars.$spacing-medium;
+
+        color: vars.$color-white;
+
+        font-size: 6rem;
+        line-height: 1.05;
+    }
+
+
+    &__description {
+        max-width: 35rem;
+
+        margin-bottom: vars.$spacing-medium;
+
+        color: vars.$color-text;
+
+        font-size: vars.$font-size-normal;
+        line-height: 1.6;
+    }
+
+
+    &__buttons {
+        display: flex;
+        gap: vars.$spacing-unit;
+    }
+}

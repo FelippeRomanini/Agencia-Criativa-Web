@@ -1,0 +1,23 @@
+{
+  "name": "agencia-criativa-web",
+  "version": "1.0.0",
+  "main": "script.js",
+  "scripts": {
+    "sass": "sass scss/main.scss css/main.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FelippeRomanini/Agencia-Criativa-Web.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FelippeRomanini/Agencia-Criativa-Web/issues"
+  },
+  "homepage": "https://github.com/FelippeRomanini/Agencia-Criativa-Web#readme",
+  "description": "",
+  "devDependencies": {
+    "sass": "^1.104.1"
+  }
+}

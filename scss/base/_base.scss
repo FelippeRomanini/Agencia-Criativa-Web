@@ -1,0 +1,58 @@
+@use "../abstracts/variables" as vars;
+
+html {
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+
+body {
+    min-height: 100vh;
+
+    background-color: vars.$color-background;
+    color: vars.$color-white;
+
+    font-family: Arial, sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+button,
+input,
+textarea {
+    font: inherit;
+}
+
+
+
+// componentes gerais
+
+.section-label {
+    margin-bottom: vars.$spacing-unit;
+
+    color: vars.$color-purple-light;
+
+    font-size: vars.$font-size-normal;
+    font-weight: 600;
+
+    letter-spacing: 0.1rem;
+}
+
+.section-title {
+    margin-bottom: vars.$spacing-medium;
+
+    color: vars.$color-white;
+
+    font-size: 3rem;
+    line-height: 1.15;
+}
+
+.section-description {
+    color: vars.$color-text;
+    line-height: 1.7;
+}
